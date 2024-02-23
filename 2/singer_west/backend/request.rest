@@ -1,0 +1,59 @@
+GET http://localhost:5000/singer
+
+###
+GET http://localhost:5000/singer/1
+
+###
+POST http://localhost:5000/singer
+Content-Type: application/json
+
+{
+    "profil": "https://i.discogs.com/K_LP4FMt7JQDMRICTqK6DGHZ_Nx60BcGy_n6LNppKqI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ3MTA2/OS0xMjg2NzQ2NzU4/LmpwZWc.jpeg",
+    "nama": "matthew charles sanders",
+    "lahir": "31 juli 1981",
+    "genre": "heavy metal",
+    "instrument": "vokalis",
+    "tahun_aktif": "1999 - sekarang",
+    "artis_terkait": "avenged sevenfold"
+}
+
+
+###
+PATCH http://localhost:5000/singer/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "profil": "https://i.discogs.com/K_LP4FMt7JQDMRICTqK6DGHZ_Nx60BcGy_n6LNppKqI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ3MTA2/OS0xMjg2NzQ2NzU4/LmpwZWc.jpeg",
+    "nama": "matthew charles sanders",
+    "lahir": "31 juli 1981",
+    "genre": "heavy metal",
+    "instrument": "vokal",
+    "tahun_aktif": "1999 - sekarang",
+    "artis_terkait": "avenged sevenfold"
+  }
+
+###
+POST http://localhost:5000/singer
+Content-Type: application/json
+
+{
+    "profil": "https://townsquare.media/site/295/files/2021/11/attachment-Eric-Clapton-August-Album-Image.jpg?w=980&q=75",
+    "nama": "eric patrick clapton",
+    "lahir": "30 maret 1945",
+    "genre": "blues",
+    "instrument": "vokal",
+    "tahun_aktif": "1963 - sekarang",
+    "artis_terkait": "the yardbirs"
+}
+
+# tidak jalan
+{
+    "profil": "https://townsquare.media/site/295/files/2021/11/attachment-Eric-Clapton-August-Album-Image.jpg?w=980&q=75",
+    "nama": "eric patrick clapton",
+    "lahir": "30 maret 1945",
+    "genre": "blues",
+    "instrument": "vokal",
+    "tahun aktif": "1963 - sekarang",
+    "artis terkait": "the yardbirs"
+}

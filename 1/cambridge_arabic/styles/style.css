@@ -1,0 +1,595 @@
+:root {
+    --blue: rgb(132, 204, 226);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: "Lato", sans-serif; */
+    /* overflow: hidden; */
+}
+
+.menu-utama {
+    background: url(../assets/background/30Untitled-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 140%;
+}
+
+
+/* ================== header =============== */
+
+
+/*  --- hidden menu ----- */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(22, 74, 100, 0.96);
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 0 10px 20px 0.5px rgb(19, 19, 19);
+    /* color: rgb(19, 19, 19); */
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #dbdbdb;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: rgb(101, 219, 255);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#navadm {
+    margin-top: 460px;
+}
+
+
+/* #navadm a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #dbdbdb;
+    display: block;
+    transition: 0.3s;
+} */
+
+
+/* ----- end hidden menu ------ */
+
+.navbar {
+    /* display: flex; */
+    width: 70%;
+    height: 100px;
+    /* border: 2px solid red; */
+    /* border-bottom-right-radius: 20px; */
+    background-color: rgba(165, 205, 231, 0.72);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 6px 70px;
+    width: 100%;
+    display: flex;
+    /* border: 2px solid green; */
+    box-sizing: border-box;
+    /* width: 100%; */
+    justify-content: space-between;
+    /* align-items: center; */
+    /* padding: ; */
+}
+
+
+/* .navbar li {
+    border: 2px solid blue;
+    width: 28%;
+    margin: 0;
+} */
+
+.navMenu {
+    /* background: url(../assets/png/three-dots.png); */
+    /* padding: 40px; */
+    box-sizing: border-box;
+    /* margin: 0; */
+}
+
+.navMenu.satu {
+    /* flex-grow: 1; */
+    background: url(../assets/png/three-dots.png);
+    width: 100px;
+    height: 90px;
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+.navMenu.satu:hover {
+    transform: rotate(90deg);
+    /* zoom: ; */
+    transition: linear 0.12s;
+    cursor: pointer;
+}
+
+.navMenu.dua {
+    /* flex-grow: 3; */
+    background: url(../assets/png/cambridge2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 90px;
+}
+
+.navMenu.tiga {
+    /* flex-grow: 1; */
+    width: 100px;
+    height: 90px;
+}
+
+
+/* =================== main ================ */
+
+.main-home {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* -------- home --------- */
+
+.container-tengah {
+    margin: 40px 0;
+}
+
+.container-tengah.satu {
+    /* border: 2px solid green; */
+    padding: 10px;
+    display: flex;
+}
+
+.home-article {
+    padding: 20px;
+}
+
+.home-article.satu {
+    width: 700px;
+    /* border: 2px solid red; */
+    /* padding: 20px; */
+}
+
+.home-gambar.satu {
+    height: 200px;
+    width: 300px;
+    /* border: 2px solid blue; */
+    background: url(../assets/pexels-ali-burhan-7261977.jpg);
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-tengah.dua {
+    display: flex;
+    /* border: 2px solid green; */
+    padding: 20px;
+    justify-content: center;
+}
+
+.home-subgambar.satu {
+    /* border: 2px solid red; */
+    width: 270px;
+    height: 180px;
+    background: url(../assets/IMG_4207.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-subgambar.dua {
+    /* border: 2px solid red; */
+    width: 270px;
+    height: 180px;
+    margin-top: 6px;
+    background: url(../assets/20160203MUIS092-1200x800.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-gambar.tiga {
+    /* border: 2px solid red; */
+    width: 278px;
+    height: 368px;
+    background: url(../assets/80-14.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-tengah.tiga {
+    display: flex;
+    justify-content: center;
+}
+
+.home-article.tiga li {
+    margin: 0;
+    padding: 3px;
+}
+
+.container-tengah.tiga {
+    /* border: 2px solid green; */
+    padding: 20px;
+    display: flex;
+}
+
+.home-subgambar.tiga {
+    width: 278px;
+    height: 368px;
+    background: url(../assets/WhatsApp-Image-2018-11-12-at-8.54.04-AM-800x800.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-article.tiga,
+.home-article.empat {
+    width: 300px;
+    /* border: 2px solid red; */
+}
+
+.container-tengah.empat {
+    /* border: 2px solid green; */
+    padding: 20px;
+    margin: 0 auto;
+    width: 900px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.home-subgambar.empat {
+    width: 270px;
+    height: 180px;
+    background: url(../assets/education_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-subgambar.lima {
+    width: 270px;
+    height: 180px;
+    background: url(../assets/20160203MUIS011-1200x800.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-subgambar.enam {
+    width: 270px;
+    height: 180px;
+    background: url(../assets/maxresdefault_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-subgambar.tujuh {
+    width: 270px;
+    height: 180px;
+    background: url(../assets/IMG_4584-1067x800.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-subgambar.delapan {
+    width: 270px;
+    height: 180px;
+    background: url(../assets/IMG_4697-1067x800.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-subgambar.sembilan {
+    width: 270px;
+    height: 180px;
+    background: url(../assets/WhatsApp-Image-2019-03-14-at-7.56.50-AM-1067x800.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* .home-gambar {
+    box-shadow: 0 10px 20px 0.5px rgb(109, 109, 109);
+} */
+
+
+/* -------- end home --------- */
+
+
+/* =================== end main ================ */
+
+
+/* =================== about =================== */
+
+.container-luar-about {
+    padding: 10px;
+    height: 458px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-about {
+    padding: 20px;
+    text-align: justify;
+    width: 700px;
+    /* border: 2px solid green; */
+}
+
+.gambar-about {
+    width: 300px;
+    height: 250px;
+    /* border: 2px solid blue; */
+    background: url(../assets/pexels-eat-kubba-7167856.jpg);
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* =================== end about =================== */
+
+
+/* @@@@@@@@@@@@@@@@ login @@@@@@@@@@@@@@@ */
+
+
+/* ================= main ================ */
+
+.container-luar-login {
+    width: 500px;
+    height: 478px;
+    padding: 20px;
+    box-sizing: border-box;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.login-judul {
+    text-align: center;
+    color: #fff;
+    background-color: rgb(32, 42, 73);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.container-luar-login .form-login {
+    padding: 0 30px 18px 30px;
+    /* background-color: aliceblue; */
+    /* border: 2px solid red; */
+    background-color: #fff;
+    text-align: justify;
+    box-shadow: 0 10px 20px 0.5px rgb(228, 228, 288);
+    box-sizing: border-box;
+}
+
+.form-login input[type="text"],
+.form-login input[type="date"],
+.form-login input[type="password"] {
+    height: 30px;
+    width: 90%;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 2px solid rgb(68, 48, 86);
+}
+
+.form-login input[type="text"]:hover,
+.form-login input[type="date"]:hover,
+.form-login input[type="password"]:hover {
+    border-bottom: 2px solid orange;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    border: none;
+    background-color: rgb(68, 48, 86);
+    color: #ffff;
+    padding: 8px 10px;
+    margin-top: 6px;
+}
+
+input[type="submit"]:active {
+    background-color: rgb(92, 166, 235);
+    color: black;
+}
+
+.container-button-logout {
+    display: flex;
+}
+
+.button-logout {
+    padding: 4px;
+    border: 2px solid rgb(23, 59, 124);
+    text-decoration: none;
+    margin: 6px auto;
+    background-color: rgb(127, 197, 255);
+    color: black;
+}
+
+
+/* ================= main end ================ */
+
+
+/* @@@@@@@@@@@@@@@@ login end @@@@@@@@@@@@@@@ */
+
+
+/* ================ hal index admin ================== */
+
+.container-index-adm {
+    /* border: 2px solid red; */
+    padding: 10px;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.article-adm {
+    /* border: 2px solid green; */
+    padding: 10px 30px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0.5px rgb(156, 156, 156);
+    /* margin: 0 auto; */
+}
+
+.table-data,
+.table-data tr,
+.table-data td,
+.table-data th {
+    border: 2px solid rgb(126, 126, 126);
+    border-collapse: collapse;
+    padding: 4px;
+}
+
+
+/* ================ end hal index admin ================== */
+
+
+/* ================ pendaftaran ================== */
+
+.input-daftar {
+    margin: 0 auto;
+}
+
+
+/* ================ end pendaftaran ================== */
+
+
+/* ================ edit ================ */
+
+
+/* ================ end edit ================ */
+
+
+/* ============== footer ========= */
+
+footer {
+    background-color: rgb(32, 42, 73);
+    color: white;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h3 {
+    margin: 0;
+}
+
+.container-bawah.satu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#garis {
+    border-right: 2px solid white;
+}
+
+.container-bawah.satu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 6px;
+    box-sizing: border-box;
+    /* text-decoration: none; */
+}
+
+.info {
+    padding: 10px;
+}
+
+.media-logo {
+    display: flex;
+    padding: 6px;
+    justify-content: space-around;
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    /* border: 2px solid white; */
+}
+
+.social.satu {
+    background: url(../assets/png/whatsapp.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.social.dua {
+    background: url(../assets/png/instagram.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.social.tiga {
+    background: url(../assets/png/twitter.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container-bawah.dua {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo-bawah {
+    background: url(../assets/png/cambridew.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 40px;
+    /* border: 2px solid white; */
+}
+
+
+/* ============== end footer ========= */
